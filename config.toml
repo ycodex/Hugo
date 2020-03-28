@@ -1,0 +1,73 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+googleAnalytics = "UA-155706901-1"
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "My new site"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "karthik"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "karthik"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact"
+[[params.social]]
+      name = "GitHub"
+      icon = "fab fa-github fa-2x"
+      url = "https://github.com/ycodex"
+[[params.social]]
+      name = "Instagram"
+      icon = "fab fa-instagram fa-2x"
+      url = "https://instagram.com/karthik._k23"
+[[params.social]]
+      name = "Snapchat"
+      icon = "fab fa-snapchat fa-2x"
+      url = "https://keybase.io/karthik221b"
+[[params.social]]
+      name = "Telagram"
+      icon = "fab fa-telegram fa-2x"
+      url = "https://t.me/ycodex"
+[[params.social]]
+      name = "Spotify"
+      icon = "fab fa-spotify fa-2x"
+      url = "https://open.spotify.com/playlist/0HeWcnE8qyr3XdSfP8pU4a?si=96S1s1ztT6ymrpOtwahM-g"
