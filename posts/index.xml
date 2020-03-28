@@ -77,23 +77,5 @@ print(&quot;GIT_PATH: &quot;, GIT_PATH)
 ]]></content>
         </item>
         
-        <item>
-            <title>Test post</title>
-            <link>/posts/my-first-post/</link>
-            <pubDate>Fri, 27 Mar 2020 05:36:02 +0000</pubDate>
-            
-            <guid>/posts/my-first-post/</guid>
-            <description>Author: karthik
-making sure everything is working fine.
-git clone  testing italics</description>
-            <content type="html"><![CDATA[<p><strong>Author: karthik</strong></p>
-<p>making sure everything is working fine.</p>
-<pre><code>git clone  
-</code></pre>
-<p><em>testing italics</em></p>
-<p><img src="/uploads/vector.png" alt=""></p>
-]]></content>
-        </item>
-        
     </channel>
 </rss>
