@@ -1,6 +1,6 @@
 ---
 label: blog post
-hide_body: true
+hide_body: false
 fields:
 - type: text
   name: title
@@ -24,5 +24,15 @@ fields:
 - type: list
   name: tags
   label: tags
+- name: write_blog_
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: 'Write blog '
+  description: write shit here
 pages:
 - content/posts/git-for-newbies.md
