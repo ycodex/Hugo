@@ -7,7 +7,7 @@ curl -sLo hugo_0.64.0_Linux-64bit.deb https://github.com/gohugoio/hugo/releases/
 sudo dpkg -i hugo_0.64.0_Linux-64bit.deb
 rm -rf hugo_0.64.0_Linux-64bit.deb
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-GH_PERSONAL_TOKEN="a0511260f9dbf646bd6823be977322cdba90782a"
+
 # Build the project.
 export BUILD_DIR=$(pwd)
 cd ..
@@ -33,7 +33,7 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git remote rm origin
-git remote add origin https://ycodex:${GH_PERSONAL_TOKEN}@github.com/ycodex/ycodex.github.io
+git remote add origin https://ycodex:${GH_TOKEN}@github.com/ycodex/ycodex.github.io
 git push origin master
 
 # Come Back up to the Project Root
