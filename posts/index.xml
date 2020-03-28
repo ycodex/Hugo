@@ -6,8 +6,76 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>karthik</copyright>
-        <lastBuildDate>Fri, 27 Mar 2020 05:36:02 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 27 Mar 2020 18:30:00 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Clone git repo to GDrive</title>
+            <link>/posts/clone-git-repo-to-gdrive/</link>
+            <pubDate>Fri, 27 Mar 2020 18:30:00 +0000</pubDate>
+            
+            <guid>/posts/clone-git-repo-to-gdrive/</guid>
+            <description>Author: Karthik
+This is a way to clone the repositories to the google drive. I used it because the repo was way too big.
+Lets get to the point, we&amp;rsquo;ll be using git colab for this.a
+Access google drive from google colab Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.
+from google.colab import drive rootpath=&amp;quot;/content/drive&amp;quot; drive.mount(rootpath)  These two lines will get acces to your drive.</description>
+            <content type="html"><![CDATA[<p><strong>Author: Karthik</strong></p>
+<p>This is a way to clone the repositories to the google drive. I used it because the repo was way too big.</p>
+<p>Lets get to the point, we&rsquo;ll  be using git colab for this.a</p>
+<h2 id="access-google-drive-from-google-colab">Access google drive from google colab</h2>
+<p>Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.</p>
+<pre><code>from google.colab import drive
+rootpath=&quot;/content/drive&quot;
+drive.mount(rootpath)
+</code></pre>
+<p>These two lines will get acces to your drive. It will send an url .Click on that url and get the code and paste it back here.</p>
+<h2 id="changing-directory">Changing Directory</h2>
+<p>Now change to Mydrive location using the following code.</p>
+<pre><code>%cd 'My Drive'
+</code></pre>
+<p>After this change directory to your desired location where you want to clone repo</p>
+<pre><code>%cd path/to/your/location
+</code></pre>
+<h2 id="cloning-repository">Cloning repository</h2>
+<p>First we need to get some things like</p>
+<ul>
+<li>DRIVE_PATH</li>
+<li>GIT_USERNAME</li>
+<li>GIT__ACCESS__TOKEN</li>
+<li>GIT_REPO</li>
+</ul>
+<p>Goto your github settings and go to Developer settings.</p>
+<p>In there go to personal access token and Generate a new Token .Make sure that you tick the repo box.Copy the token.</p>
+<p>In the next cell in notebook type these.</p>
+<pre><code># import join used to join ROOT path and MY_GOOGLE_DRIVE_PATH
+from os.path import join  
+
+# path to your project on Google Drive
+DRIVE_PATH = 'My Drive/MyDrive/your/desired/path' 
+# replace with your Github username 
+GIT_USERNAME = &quot;your username&quot; 
+# definitely replace with your
+GIT_ACCESS_TOKEN = &quot;{YOUR_GITHUB_TOKEN}&quot;  
+# Replace with your github repository in this case we want 
+# to clone deep-learning-v2-pytorch repository
+GIT_REPO = &quot;repo-name&quot; 
+
+PROJECT_PATH = join(ROOT, MY_GOOGLE_DRIVE_PATH)
+# In case we haven't created the folder already; we will create a folder in the project path 
+!mkdir &quot;{PROJECT_PATH}&quot;    
+
+#GIT_PATH = &quot;https://{GIT_TOKEN}@github.com/{GIT_USERNAME}/{GIT_REPOSITORY}.git&quot; this return 400 Bad Request for me
+GIT_PATH = &quot;https://&quot; + GIT_ACCESS_TOKEN + &quot;@github.com/&quot; + GIT_USERNAME + &quot;/&quot; + GIT_REPO + &quot;.git&quot;
+print(&quot;GIT_PATH: &quot;, GIT_PATH)
+</code></pre>
+<p>After this go to your project path and clone the repo.</p>
+<pre><code>%cd &quot;{PROJECT_PATH}&quot;
+!git clone &quot;{GIT_PATH}&quot;
+</code></pre>
+<p>And you have successfully cloned to google drive.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Test post</title>

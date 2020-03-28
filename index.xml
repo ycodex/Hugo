@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>karthik</copyright>
-    <lastBuildDate>Fri, 27 Mar 2020 05:36:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clone git repo to GDrive</title>
+      <link>/posts/clone-git-repo-to-gdrive/</link>
+      <pubDate>Fri, 27 Mar 2020 18:30:00 +0000</pubDate>
+      
+      <guid>/posts/clone-git-repo-to-gdrive/</guid>
+      <description>Author: Karthik
+This is a way to clone the repositories to the google drive. I used it because the repo was way too big.
+Lets get to the point, we&amp;rsquo;ll be using git colab for this.a
+Access google drive from google colab Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.
+from google.colab import drive rootpath=&amp;quot;/content/drive&amp;quot; drive.mount(rootpath)  These two lines will get acces to your drive.</description>
+    </item>
     
     <item>
       <title>Test post</title>

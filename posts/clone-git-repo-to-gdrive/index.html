@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Author: Karthik
+This is a way to clone the repositories to the google drive. I used it because the repo was way too big.
+Lets get to the point, we&amp;rsquo;ll be using git colab for this.a
+Access google drive from google colab Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.
+from google.colab import drive rootpath=&amp;quot;/content/drive&amp;quot; drive.mount(rootpath)  These two lines will get acces to your drive." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/posts/clone-git-repo-to-gdrive/" />
+
+
+    <title>
+        
+            Clone git repo to GDrive :: karthik 
+        
+    </title>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" crossorigin="anonymous" />
+
+
+
+
+<link rel="stylesheet" href="/main.min.css">
+
+
+
+
+<meta itemprop="name" content="Clone git repo to GDrive">
+<meta itemprop="description" content="Author: Karthik
+This is a way to clone the repositories to the google drive. I used it because the repo was way too big.
+Lets get to the point, we&rsquo;ll be using git colab for this.a
+Access google drive from google colab Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.
+from google.colab import drive rootpath=&quot;/content/drive&quot; drive.mount(rootpath)  These two lines will get acces to your drive.">
+<meta itemprop="datePublished" content="2020-03-27T18:30:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-03-27T18:30:00&#43;00:00" />
+<meta itemprop="wordCount" content="318">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Clone git repo to GDrive"/>
+<meta name="twitter:description" content="Author: Karthik
+This is a way to clone the repositories to the google drive. I used it because the repo was way too big.
+Lets get to the point, we&rsquo;ll be using git colab for this.a
+Access google drive from google colab Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.
+from google.colab import drive rootpath=&quot;/content/drive&quot; drive.mount(rootpath)  These two lines will get acces to your drive."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-03-27 18:30:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">karthik</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/posts/clone-git-repo-to-gdrive/">Clone git repo to GDrive</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p><strong>Author: Karthik</strong></p>
+<p>This is a way to clone the repositories to the google drive. I used it because the repo was way too big.</p>
+<p>Lets get to the point, we&rsquo;ll  be using git colab for this.a</p>
+<h2 id="access-google-drive-from-google-colab">Access google drive from google colab</h2>
+<p>Go to google colab ,signin and open a new notebook. This is similar to Jupyter Notebook.In there type the below code.</p>
+<pre><code>from google.colab import drive
+rootpath=&quot;/content/drive&quot;
+drive.mount(rootpath)
+</code></pre>
+<p>These two lines will get acces to your drive. It will send an url .Click on that url and get the code and paste it back here.</p>
+<h2 id="changing-directory">Changing Directory</h2>
+<p>Now change to Mydrive location using the following code.</p>
+<pre><code>%cd 'My Drive'
+</code></pre>
+<p>After this change directory to your desired location where you want to clone repo</p>
+<pre><code>%cd path/to/your/location
+</code></pre>
+<h2 id="cloning-repository">Cloning repository</h2>
+<p>First we need to get some things like</p>
+<ul>
+<li>DRIVE_PATH</li>
+<li>GIT_USERNAME</li>
+<li>GIT__ACCESS__TOKEN</li>
+<li>GIT_REPO</li>
+</ul>
+<p>Goto your github settings and go to Developer settings.</p>
+<p>In there go to personal access token and Generate a new Token .Make sure that you tick the repo box.Copy the token.</p>
+<p>In the next cell in notebook type these.</p>
+<pre><code># import join used to join ROOT path and MY_GOOGLE_DRIVE_PATH
+from os.path import join  
+
+# path to your project on Google Drive
+DRIVE_PATH = 'My Drive/MyDrive/your/desired/path' 
+# replace with your Github username 
+GIT_USERNAME = &quot;your username&quot; 
+# definitely replace with your
+GIT_ACCESS_TOKEN = &quot;{YOUR_GITHUB_TOKEN}&quot;  
+# Replace with your github repository in this case we want 
+# to clone deep-learning-v2-pytorch repository
+GIT_REPO = &quot;repo-name&quot; 
+
+PROJECT_PATH = join(ROOT, MY_GOOGLE_DRIVE_PATH)
+# In case we haven't created the folder already; we will create a folder in the project path 
+!mkdir &quot;{PROJECT_PATH}&quot;    
+
+#GIT_PATH = &quot;https://{GIT_TOKEN}@github.com/{GIT_USERNAME}/{GIT_REPOSITORY}.git&quot; this return 400 Bad Request for me
+GIT_PATH = &quot;https://&quot; + GIT_ACCESS_TOKEN + &quot;@github.com/&quot; + GIT_USERNAME + &quot;/&quot; + GIT_REPO + &quot;.git&quot;
+print(&quot;GIT_PATH: &quot;, GIT_PATH)
+</code></pre>
+<p>After this go to your project path and clone the repo.</p>
+<pre><code>%cd &quot;{PROJECT_PATH}&quot;
+!git clone &quot;{GIT_PATH}&quot;
+</code></pre>
+<p>And you have successfully cloned to google drive.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>318 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-03-27 18:30 &#43;0000</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/posts/my-first-post/">
+                                <span class="button__text">Test post</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span>karthik</span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-155706901-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>
