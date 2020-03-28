@@ -52,19 +52,16 @@ In the next cell in notebook type these.
     DRIVE_PATH = 'My Drive/MyDrive/your/desired/path' 
     # replace with your Github username 
     GIT_USERNAME = "your username" 
-    # definitely replace with your
+    # replace with your token
     GIT_ACCESS_TOKEN = "{YOUR_GITHUB_TOKEN}"  
-    # Replace with your github repository in this case we want 
-    # to clone deep-learning-v2-pytorch repository
+     # to clone repository
     GIT_REPO = "repo-name" 
     
     PROJECT_PATH = join(ROOT, MY_GOOGLE_DRIVE_PATH)
     # In case we haven't created the folder already; we will create a folder in the project path 
     !mkdir "{PROJECT_PATH}"    
-    
-    #GIT_PATH = "https://{GIT_TOKEN}@github.com/{GIT_USERNAME}/{GIT_REPOSITORY}.git" this return 400 Bad Request for me
     GIT_PATH = "https://" + GIT_ACCESS_TOKEN + "@github.com/" + GIT_USERNAME + "/" + GIT_REPO + ".git"
-    print("GIT_PATH: ", GIT_PATH)
+    
 
 After this go to your project path and clone the repo.
 
