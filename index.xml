@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>karthik</title>
+    <link>/</link>
+    <description>Recent content on karthik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 11:06:02 +0530</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>/posts/my-first-post/</link>
+      <pubDate>Fri, 27 Mar 2020 11:06:02 +0530</pubDate>
+      
+      <guid>/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>$whoami</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am karthik, a 20 year old, just want to learn new stuff about software.Thats it.</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>I am always available on Telegram and Instagram. And here is my mail if u need it [karthiknaik120@gmail.com](mailto: karthiknaik120@gmail.com)</description>
+    </item>
+    
+  </channel>
+</rss>
