@@ -1,10 +1,18 @@
 ---
-title: "My First Post"
-date: 2020-03-27T11:06:02+05:30
-draft: False
+title: Test post
+date: 2020-03-27T05:36:02+00:00
 toc: false
-images:
+images: 
 tags:
-  - untagged
----
+- untagged
 
+---
+**Author: karthik**
+
+making sure everything is working fine.
+
+    git clone  
+
+_testing italics_
+
+![](/uploads/vector.png)
