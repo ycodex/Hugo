@@ -12,3 +12,5 @@ fields:
   type: tag_list
   default: []
   label: Tag
+pages:
+- content/posts/clone-git-repo-to-gdrive.md
