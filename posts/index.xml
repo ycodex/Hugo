@@ -55,19 +55,15 @@ from os.path import join
 DRIVE_PATH = 'My Drive/MyDrive/your/desired/path' 
 # replace with your Github username 
 GIT_USERNAME = &quot;your username&quot; 
-# definitely replace with your
+# replace with your token
 GIT_ACCESS_TOKEN = &quot;{YOUR_GITHUB_TOKEN}&quot;  
-# Replace with your github repository in this case we want 
-# to clone deep-learning-v2-pytorch repository
+ # to clone repository
 GIT_REPO = &quot;repo-name&quot; 
 
 PROJECT_PATH = join(ROOT, MY_GOOGLE_DRIVE_PATH)
 # In case we haven't created the folder already; we will create a folder in the project path 
 !mkdir &quot;{PROJECT_PATH}&quot;    
-
-#GIT_PATH = &quot;https://{GIT_TOKEN}@github.com/{GIT_USERNAME}/{GIT_REPOSITORY}.git&quot; this return 400 Bad Request for me
 GIT_PATH = &quot;https://&quot; + GIT_ACCESS_TOKEN + &quot;@github.com/&quot; + GIT_USERNAME + &quot;/&quot; + GIT_REPO + &quot;.git&quot;
-print(&quot;GIT_PATH: &quot;, GIT_PATH)
 </code></pre>
 <p>After this go to your project path and clone the repo.</p>
 <pre><code>%cd &quot;{PROJECT_PATH}&quot;
