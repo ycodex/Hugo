@@ -34,5 +34,3 @@ fields:
       format: markdown
   label: 'Write blog '
   description: write shit here
-pages:
-- content/posts/git-for-newbies.md
