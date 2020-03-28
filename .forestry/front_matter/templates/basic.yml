@@ -8,12 +8,7 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: boolean
-  name: toc
-  label: toc
-- type: text
-  name: images
-  label: images
-- type: list
-  name: tags
-  label: tags
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
